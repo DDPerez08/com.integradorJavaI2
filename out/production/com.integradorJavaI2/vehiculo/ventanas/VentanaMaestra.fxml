@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane accessibleRole="RADIO_BUTTON" focusTraversable="true" prefHeight="535.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehiculo.ventanas.VentanaMaestra">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="657.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Abrir Ventana">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem id="Autos" mnemonicParsing="false" text="Autos" />
+                  <MenuItem id="Vendedores" mnemonicParsing="false" text="Vendedores" />
+                  <MenuItem id="Compradores" mnemonicParsing="false" text="Compradores" />
+                  <MenuItem id="Ayudaon-line" mnemonicParsing="false" text="Ayuda on-line" />
+                  <MenuItem id="Configuración" mnemonicParsing="false" text="Configuración" />
+                  <MenuItem id="Salir" mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+         <Menu mnemonicParsing="false" onAction="#handleAbout" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

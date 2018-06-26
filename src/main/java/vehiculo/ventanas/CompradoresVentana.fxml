@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="311.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehiculo.ventanas.VendedoresVentana">
+   <children>
+      <Pane layoutX="2.0" prefHeight="300.0" prefWidth="212.0" />
+      <TableView fx:id="personTable" layoutX="-4.0" prefHeight="300.0" prefWidth="213.0">
+         <columns>
+            <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Apellido" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="214.0" layoutY="6.0" text="Datos del Vendedor" />
+      <Pane layoutX="220.0" layoutY="45.0" prefHeight="186.0" prefWidth="370.0">
+         <children>
+            <GridPane layoutY="13.0" prefHeight="131.0" prefWidth="370.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Nombre:" />
+                  <Label text="Apellido:" GridPane.rowIndex="1" />
+                  <Label text="Nro de Documento:" GridPane.rowIndex="2" />
+                  <Label text="Presupuesto:" GridPane.rowIndex="3" />
+                  <Label text="Label" GridPane.columnIndex="1" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane layoutX="220.0" layoutY="268.0" prefHeight="53.0" prefWidth="370.0">
+         <children>
+            <Button layoutX="21.0" layoutY="14.0" mnemonicParsing="false" text="Nuevo" />
+            <Button layoutX="82.0" layoutY="14.0" mnemonicParsing="false" text="Editar" />
+            <Button layoutX="140.0" layoutY="14.0" mnemonicParsing="false" text="Borrar" />
+            <Button layoutX="304.0" layoutY="14.0" mnemonicParsing="false" text="Cerrar" />
+         </children>
+      </Pane>
+     
+      
+   </children>
+</AnchorPane>

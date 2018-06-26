@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="com.integradorJavaI2">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_integradorJavaI2</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="vehiculo.pruebas.Programa" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="com_integradorJavaI2.jar">
+        <element id="module-output" name="com.integradorJavaI2" />
+      </element>
+    </root>
+  </artifact>
+</component>

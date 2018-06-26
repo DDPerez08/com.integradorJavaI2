@@ -1,0 +1,49 @@
+package vehiculo.pruebas;
+
+
+/*
+
+import javafx.scene.layout.StackPane;
+import vehiculo.entidades.Auto;
+import vehiculo.entidades.Comprador;
+import vehiculo.entidades.Vendedor;
+import base.entidades.Vehiculo;
+*/
+//import java.io.IOException;
+import base.entidades.Persona;
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+
+//import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import vehiculo.ventanas.VentanaMaestra;
+//import javafx.stage.Modality;
+
+public abstract class Programa extends Application {
+    //public Programa(){    }
+
+  /*   private Stage primaryStage;
+
+    private BorderPane rootLayout;
+
+    private ObservableList<Persona> personData = FXCollections.observableArrayList();
+*/
+
+
+    private Stage primaryStage;
+    private BorderPane rootLayout;
+    public static void main (String[] args)
+    { //launch(args);
+        VentanaMaestra v = new VentanaMaestra();
+        //ventana maestra
+        v.start(primaryStage);
+
+    }
+
+}
